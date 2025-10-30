@@ -98,14 +98,16 @@ form #telefone {
 }
 
 form #sexo {
-  width: 100%;
   cursor: pointer;
 }
 
 form label {
   color: white;
 }
-
+form #sexo,
+form #estado {
+  width: calc(50% - 10px);
+}
 form #estado {
   padding: 8px 16px;
   outline: none;
@@ -123,6 +125,10 @@ form input:hover {
   box-shadow: 0 0 10px rgba(185, 153, 234, 0.6);
   transform: scale(1.05);
   transition: 0.3;
+}
+
+input#masculino.sexo {
+  background-color: #000000;
 }
 
 div h1 {
