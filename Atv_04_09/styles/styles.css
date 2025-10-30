@@ -1,0 +1,39 @@
+#tabela {
+  width: 100%;
+  margin: 20px;
+  border-collapse: collapse;
+}
+
+#tabela caption {
+  font-size: 22px;
+  font-style: italic;
+  margin-bottom: 5px;
+  padding: 0px;
+  text-align: left;
+  border: 2px solid black;
+  text-align: center;
+}
+
+#tabela thead tr th,
+#tabela tbody tr td,
+#tabela tfoot td {
+  padding: 10px;
+  text-align: left;
+  border: 2px solid black;
+  text-align: center;
+}
+
+#tabela th {
+  background-color: cornflowerblue;
+}
+
+#tabela tfoot td {
+  background-color: cornflowerblue;
+  font-style: italic;
+  text-align: center;
+}
+
+body {
+  margin-left: 10px;
+  margin-right: 90px;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividade Formulário 2</title>
+    <link rel="stylesheet" href="Styles/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="img/download.png" type="image/x-icon" />
+  </head>
+  <body>
+    <section class="container">
+      <div class="ladoimg"></div>
+      <div class="ladoform">
+        <h1><b>Formulário</b></h1>
+        <form action="" method="">
+          <input type="text" name="nome" id="nome" placeholder="Nome" />
+
+          <input type="number" name="idade" id="idade" placeholder="Idade" />
+
+          <input type="email" name="email" id="email" placeholder="Email" />
+
+          <input type="password" name="senha" id="senha" placeholder="Senha" />
+
+          <input
+            type="tel"
+            name="telefone"
+            id="telefone"
+            placeholder="Telefone"
+          />
+          <input type="radio" name="sexo" id="masculino" value="masculino" />
+          <label for="">Masculino</label>
+
+          <input type="radio" name="sexo" id="feminino" value="feminino" />
+          <label for="">Feminino</label>
+
+          <select name="estado" id="estado">
+            <option value="" disabled selected>
+              <p>Selecione seu estado...</p>
+            </option>
+            <option value="Espírito Santo">Espírito Santo</option>
+            <option value="Minas Gerais">Minas Gerais</option>
+            <option value="Rio de Janeiro">Rio de Janeiro</option>
+            <option value="São Paulo">São Paulo</option>
+            <option value="Paraná">Paraná</option>
+            <option value="Santa Catarina">Santa Catarina</option>
+          </select>
+        </form>
+        <button class="cadastrar">
+          <p>Enviar</p>
+        </button>
+      </div>
+    </section>
+  </body>
+</html>

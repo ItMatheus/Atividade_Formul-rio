@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Isso aqui eu usei o ChatGPT para deixar o fundo embaçado */
+body::before {
+  content: "";
+  position: absolute;
+  inset: -10px; /* empurra um pouco pra fora da tela */
+  background-image: url(../img/d2890aea54d705988318dd4de04d63f7.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: blur(8px);
+  z-index: 0;
+}
+
+.container {
+  width: 85%;
+  height: 90%;
+  background-color: #1a1b4b7e;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000000;
+  display: flex;
+  padding: 10px;
+  overflow: hidden;
+  position: relative;
+  /* usei z-index com o chat tbm para o fundo */
+  z-index: 1;
+}
+
+.ladoimg,
+.ladoform {
+  width: 50%;
+  height: 100%;
+}
+
+.ladoimg {
+  background-image: url("../img/d2890aea54d705988318dd4de04d63f7.jpg");
+  clip-path: polygon(0 0, 100% 0, 86% 100%, 0% 100%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #fff;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.ladoform {
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+form {
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+form input {
+  padding: 10px 20px;
+  background-color: #5c5ce63e;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid rgb(18, 3, 79);
+  color: white;
+  cursor: pointer;
+}
+
+form #nome,
+form #idade {
+  width: calc(50% - 10px);
+  margin-top: 20px;
+}
+
+form #email,
+form #senha,
+form #telefone {
+  width: 100%;
+}
+
+form #sexo {
+  width: 100%;
+  cursor: pointer;
+}
+
+form label {
+  color: white;
+}
+
+form #estado {
+  padding: 8px 16px;
+  outline: none;
+  background-color: #5c5ce625;
+  cursor: pointer;
+}
+
+form ::placeholder {
+  color: #ffffff;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+form input:hover {
+  border-bottom-color: gray;
+  box-shadow: 0 0 10px rgba(185, 153, 234, 0.6);
+  transform: scale(1.05);
+  transition: 0.3;
+}
+
+div h1 {
+  color: #e6e6ff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
+  color: #f5f5f5;
+  margin-bottom: 20px;
+}
+
+select {
+  color: #ffffff;
+}
+
+/* Pesquisei para mudar a cor do fundo das opções para o branco destacar */
+option {
+  background-color: #1c1c4c;
+  color: #ffffff;
+}
+
+.cadastrar {
+  width: 50%;
+  height: 40px;
+  background: linear-gradient(90deg, #5c5ce6, #a259ff);
+  margin: 20px auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.cadastrar:hover {
+  cursor: pointer;
+  background: linear-gradient(90deg, #a259ff, #c69aff);
+  box-shadow: 0 0 10px rgba(194, 154, 255, 0.6);
+  transform: scale(1.05);
+  transition: 0.3;
+}
+
+form #estado p {
+  color: #fff;
+}
